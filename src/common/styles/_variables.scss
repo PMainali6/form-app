@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Roboto-Light';
+  src:
+    local('Roboto-Light'),
+    url('../../assets/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src:
+    local('Roboto-Medium'),
+    url('../../assets/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src:
+    local('Roboto-Regular'),
+    url('../../assets/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src:
+    local('Roboto-Bold'),
+    url('../../assets/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src:
+    local('Roboto-Thin'),
+    url('../../assets/Roboto-Thin.ttf') format('truetype');
+}
+
+// fonts
+$robotoLight: Roboto-Light;
+$robotoMedium: Roboto-Medium;
+$robototoRegular: Roboto-Regular;
+$robotoBold: Roboto-Bold;
+$robotoThin: Roboto-Thin;
+
+// colors
+$white: #fff;
+$black: #000;
+$blue: #002bbc;
+$green: #007f00;
+$black-charcoal: #111111;
+
+$light-secondary: #fafafa;
+$light-gray: #a1a1a1;
+
+$form-table-border: #cccccc;
+$form-border: #97979797;
+
+$warning-bg: #fffff0;
+$warning-border: #ffee5c;
