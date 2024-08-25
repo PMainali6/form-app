@@ -1,0 +1,1 @@
+export const GREETING_MESSSGE = 'GREETING_MESSSGE';
