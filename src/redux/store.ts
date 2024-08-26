@@ -6,13 +6,13 @@ import { rootSaga } from './rootSaga';
 const sagaMiddleware = createSagaMiddleware();
 
 export const store = configureStore({
-    reducer: rootReducer,
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware({
-            thunk: false,
-            immutableCheck: { warnAfter: 128 },
-            serializableCheck: false,
-        }).concat([sagaMiddleware]),
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      thunk: false,
+      immutableCheck: { warnAfter: 128 },
+      serializableCheck: false,
+    }).concat([sagaMiddleware]),
 });
 
 sagaMiddleware.run(rootSaga);

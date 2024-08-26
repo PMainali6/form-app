@@ -1,21 +1,21 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface IAppState {
-    message: string;
+  message: string;
 }
 
 const initialState: IAppState = {
-    message: '',
+  message: '',
 };
 
 const appSlice = createSlice({
-    name: 'app',
-    initialState,
-    reducers: {
-        setMessage: (state: IAppState, action: PayloadAction<string>) => {
-            state.message = action.payload;
-        },
+  name: 'app',
+  initialState,
+  reducers: {
+    setMessage: (state: IAppState, action: PayloadAction<string>) => {
+      state.message = action.payload;
     },
+  },
 });
 
 export const { setMessage } = appSlice.actions;
