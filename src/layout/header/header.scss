@@ -1,0 +1,64 @@
+@use '../../common/styles/variables' as *;
+
+.align-items-center {
+  align-items: center;
+}
+
+.navbar {
+  --nav-font-size: 0.875rem;
+  --nav-bg-color: $white;
+  --nav-padding-y: 0.3125rem;
+  --nav-padding-x: 1.25rem;
+  --nav-icon-seperator-border: 1px solid rgb(180, 172, 172);
+  --nav-font: $robotoRegular;
+  --nav-font-size: 14px;
+  --nav-brand-margin-right: 1.5625rem;
+  --nav-brand-font-size: 16px;
+  --nav-brand-color: $green;
+  --nav-brand-icon-margin-x: -0.5rem;
+  --nav-brand-name-margin-left: 1.5rem;
+
+  display: flex;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--nav-font-size);
+  background-color: var(--nav-bg-color);
+  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    padding: var(--nav-padding-y) var(--nav-padding-x);
+    border-left: var(--nav-icon-seperator-border);
+    font-family: var(--nav-font);
+    font-size: var(--nav-font-size);
+
+    .nav-left-items {
+      display: flex;
+
+      .brand {
+        margin-right: var(--nav-brand-margin-right);
+        font-size: var(--nav-brand-font-size);
+        color: var(--nav-brand-color);
+        white-space: nowrap;
+
+        svg {
+          margin-right: var(--nav-brand-icon-margin-x);
+          margin-left: var(--nav-brand-icon-margin-x);
+          vertical-align: middle;
+        }
+
+        span {
+          margin-left: var(--nav-brand-name-margin-left);
+        }
+      }
+    }
+  }
+}
