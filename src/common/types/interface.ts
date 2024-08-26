@@ -1,6 +1,6 @@
 export interface IApiResponse<T> {
-  code: number;
-  message: string;
-  data?: T;
-  messageCode?: string;
+    code: number;
+    message: string;
+    data?: T;
+    messageCode?: string;
 }
